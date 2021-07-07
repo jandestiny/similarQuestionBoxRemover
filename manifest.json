@@ -1,0 +1,25 @@
+{
+  "name": "Entferne 'Ähnliche Fragen'",
+  "description": "Entferne 'Ähnliche Fragen'",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+	  "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "64": "64.png"
+    }
+  },
+  	"icons": {
+		"64": "64.png"
+	},
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.google.de/*"],
+      "js": ["similarQuestionBoxRemover.js"]
+    }
+  ]
+}

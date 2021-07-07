@@ -1,0 +1,24 @@
+.container {
+  width: 300px;
+} 
+
+.container p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+  height: auto;
+  width: auto;
+  outline: none;
+  margin: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.green {
+  color:green;
+}
+
+.red {
+  color:red;
+}
