@@ -5,7 +5,7 @@ chrome.storage.sync.get(["active"], (res) => {
             var h2tags = document.getElementsByTagName("h2");
         
             Array.from(h2tags).forEach((el) => {
-                if(el.innerText.includes("Ähnliche Fragen")) {
+                if(el.classList.contains("JolIg")) {
                     //Check if previous element in html structure has 'hlcw0c' class (larger free space after it)
                     
                     var questionBox = el.parentElement.parentElement.parentElement.parentElement.parentElement;
