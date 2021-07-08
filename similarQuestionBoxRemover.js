@@ -13,6 +13,7 @@ chrome.storage.sync.get(["active"], (res) => {
         
                     if(previousElement && previousElement.classList.contains("hlcw0c")) {
                         previousElement.classList.remove("hlcw0c");
+                        previousElement.classList.add("g");
                     }
                     
                     questionBox.remove();
